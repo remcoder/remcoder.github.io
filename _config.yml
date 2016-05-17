@@ -4,5 +4,5 @@ markdown: kramdown
 url: http://remcoder.github.io
 title: Remcoder's blog
 tagline: Real stuff for abstract people
-description: My awesome new site
+description: IoT, Meteor, Javascript, programming
 paginate: 5
