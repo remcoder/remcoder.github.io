@@ -2,6 +2,7 @@
 published: true
 title: Incremental Lua uploads for nodemcu
 layout: post
+tags: [nodemcu, esp8266, gulp, lua]
 ---
 ## The problem
 
