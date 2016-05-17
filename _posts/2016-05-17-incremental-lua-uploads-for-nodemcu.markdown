@@ -32,7 +32,7 @@ A side-effect of this optimization is that when you get a run-time error, the li
 
 ## Gulp to the rescue
 
-Actually, at this point I was thinking of Makefiles. But since they've somewhat fallen out of fashion I went for Gulpfiles instead. Gulpfiles are the kind of script files you feed to a tool called [Gulp](http://gulpjs.com/), but they're written in Javascript really. And just like the Makefiles of yore, you can use 'm to write your source transformations.
+Actually, at this point I was thinking of Makefiles but since they've somewhat fallen out of fashion I went for Gulpfiles instead. Gulpfiles are the kind of script files you feed to a tool called [Gulp](http://gulpjs.com/), but they're written in Javascript really. And just like the Makefiles of yore, you can use 'm to write your source transformations.
 
 So Gulp lets you write tasks which get executed whenever you enter the following on the command-line:
 
