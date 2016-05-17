@@ -21,13 +21,12 @@ I changed it to a whopping 115200 instead of the default 9600 by adding this lin
 
 *note:* Also make sure to change the baudrate at which nodemcu-tool operates. 
 
-**results** Although this was a trivial method causing an overall speedup, the improvement is marginal. It shaves of only 10% or so, causing me to think that there's some time lost during the setup of the transfer or something.
+Result: although this was a trivial method causing an overall speedup, the improvement is marginal. It shaves of only 10% or so, causing me to think that there's some time lost during the setup of the transfer or something.
 
 ## Less is more
 Another no-brainer is to limit the number of bytes that are being sent across the wire. Less bytes means less time. And nodemcu-tool has a nice option to 'optimize' files before they get sent. It does this by removing comments and reducing whitespace, a simple version of a process know to web developers as minifying.
 
-**results** 
-Again, this technique too manages to shave off roughly 10%. Which is nice but not... great. Maybe you'd say I need to write more comments in my code, and you'd be right! ..but.. that won't actually *speed up* the transfer now would it? :-P
+Result: again, this technique too manages to shave off roughly 10%. Which is nice but not... great. Maybe you'd say I need to write more comments in my code, and you'd be right! ..but.. that won't actually *speed up* the transfer now would it? :-P
 
 ## Gulp to the rescue
 
