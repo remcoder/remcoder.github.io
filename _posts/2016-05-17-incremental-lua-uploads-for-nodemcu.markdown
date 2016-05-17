@@ -19,7 +19,7 @@ I changed it to a whopping 115200 instead of the default 9600 by adding this lin
 
 `uart.setup(0, 115200, 8, 0 , 1);`
 
-*note:* Also make sure to change the baudrate at which nodemcu-tool operates. 
+*note:* Also make sure to change the baudrate at which nodemcu-tool operates.
 
 Result: although this was a trivial method causing an overall speedup, the improvement is marginal. It shaves of only 10% or so, causing me to think that there's some time lost during the setup of the transfer or something.
 
@@ -42,7 +42,7 @@ Now instead of compiling the source files, we could just run some arbitrary shel
 
 In code, it looks like this:
 
-```
+``` javascript
 var SRC = 'src/**/*.lua';
 var DEST = 'dist';
 
@@ -58,10 +58,10 @@ Some things to note:
 
 * `gulp.src` is a readable stream of files, meaning that files can be read from it
 * `pipe` is used to define a transformation on those files
-* `shell` lets you execute a shell command 
+* `shell` lets you execute a shell command
 * `gulp.dest` is a writable stream that takes in files and puts them in a directoy
 
-Have you guessed what happens when you enter `gulp upload`? Exactly, all your Lua scripts will get transferred to your nodemcu. 
+Have you guessed what happens when you enter `gulp upload`? Exactly, all your Lua scripts will get transferred to your nodemcu.
 
 Unlike make, gulp isn't lazy unfortunately. That means it'll upload each and every file whenever you run `gulp upload`. The reason is, I think, because gulp is mostly used in conjunction with a technique called *file watching*, whereby files are individually processed whenever they are changed on disk. That of course would totally obviate lazy execution but it doesn't seem to be the right approach in our case.
 
@@ -69,7 +69,7 @@ Unlike make, gulp isn't lazy unfortunately. That means it'll upload each and eve
 
 Actually, there's only a minor change we need to make to optimize the hell out of this. See if you can spot it:
 
-```
+``` javascript
 var SRC = 'src/**/*.lua';
 var DEST = 'dist';
 
@@ -88,7 +88,7 @@ The key is the line that says `.pipe(changed(DEST))`. It compares the input, whi
 
 For me, this solution is a life-saver. I can just run the same simple command every time instead of hand-picking the scripts that have been changed. And the upload is normally done in a few seconds compared to 4x, 5x or 10x that when I just copy all scripts every time.
 
-Even if you dont fully understand the part about Gulp and streams, don't worry, I'll bet you can just use the script as is and modify it to your situation. 
+Even if you dont fully understand the part about Gulp and streams, don't worry, I'll bet you can just use the script as is and modify it to your situation.
 
 Here's the link to the [full gulpfile](https://gist.github.com/remcoder/408c1979055810d29e3fbd622c51500a). Note that you'll need [Node.js and npm](https://nodejs.org) installed. Also, although I haven't mentioned it yet, this gulpfile uses several gulp plugins. These can be installed by running `npm install` in the same directory.
 
