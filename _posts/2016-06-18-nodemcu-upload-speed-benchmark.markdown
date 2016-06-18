@@ -14,7 +14,7 @@ Here's a short comparison I did of 3 command-line tools for uploading files to y
 | [nodemcu-uploader](https://github.com/kmpm/nodemcu-uploader) |  	   2.2 |
 
 
-(Tested by uploading a 2.8kb file. Lower is better)
+(Tested by uploading a 2.8kb file)
 
 Apparently, there's a huge difference in the speed that these tools achieve when uploading files. The clear winner is [nodemcu-uploader](https://github.com/kmpm/nodemcu-uploader), which is 7x faster than [nodemcu-tool](https://github.com/andidittrich/NodeMCU-Tool) and a whopping 27x faster than [luatool.py](https://github.com/4refr0nt/luatool/tree/master/luatool)
 
