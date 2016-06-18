@@ -3,6 +3,7 @@ published: true
 title: Incremental Lua uploads for nodemcu
 layout: post
 tags: [nodemcu, esp8266, gulp, lua]
+categories: [IoT]
 ---
 ## The problem
 
@@ -95,3 +96,5 @@ Here's the link to the [full gulpfile](https://gist.github.com/remcoder/408c1979
 This technique should also be usable with different upload tools, such as [luatool](https://github.com/4refr0nt/luatool) and [nodemcu-uploader](https://github.com/kmpm/nodemcu-uploader). In fact, it would be interesting to benchmark these tools and go with the fastest :-) Let me know if you have some findings to share.
 
 Go ahead, give it a try!
+
+**UPDATE** I've since switched to [nodemcu-uploader](https://github.com/kmpm/nodemcu-uploader) for uploading files because [it's about 7x faster](https://remcoder.github.io/2016/06/18/nodemcu-upload-speed-benchmark.html). I've [updated the build script](https://gist.github.com/remcoder/408c1979055810d29e3fbd622c51500a) accordingly.
