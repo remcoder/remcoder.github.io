@@ -97,4 +97,4 @@ This technique should also be usable with different upload tools, such as [luato
 
 Go ahead, give it a try!
 
-**UPDATE** I've since switched to [nodemcu-uploader](https://github.com/kmpm/nodemcu-uploader) for uploading files because [it's about 7x faster](https://remcoder.github.io/2016/06/18/nodemcu-upload-speed-benchmark.html). I've [updated the build script](https://gist.github.com/remcoder/408c1979055810d29e3fbd622c51500a) accordingly.
+**UPDATE** I've since switched to [nodemcu-uploader](https://github.com/kmpm/nodemcu-uploader) for uploading files because [it's about 7x faster](https://remcoder.github.io/iot/2016/06/18/nodemcu-upload-speed-benchmark.html). I've [updated the build script](https://gist.github.com/remcoder/408c1979055810d29e3fbd622c51500a) accordingly.
