@@ -3,6 +3,7 @@ published: true
 title: NodeMCU Upload Speed benchmark
 layout: post
 tags: [nodemcu, esp8266, lua, benchmark]
+categories: [IoT]
 ---
 Here's a short comparison I did of 3 command-line tools for uploading files to your esp8266 via USB. All of these tools require that there's already a nodemcu firmware burned on your esp8266.
 
