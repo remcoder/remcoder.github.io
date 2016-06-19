@@ -5,14 +5,14 @@ layout: post
 tags: [nodemcu, esp8266, lua, benchmark]
 categories: [IoT]
 ---
-Here's a short comparison I did of 3 command-line tools for uploading files to your esp8266 via USB. All of these tools require that there's already a nodemcu firmware burned on your esp8266.
+Here's a short comparison I did of 3 command-line tools for uploading Lua and other files to your esp8266 via USB. In this test I'm only looking at tools to transfer files to a Lua-based nodemcu board. (not flashing the actual firmware like you do with the Arduino IDE)
 
 
-| Tool             | kb/s          |
-| ---------------- | -------------:|
-| [Luatool.py](https://github.com/4refr0nt/luatool/tree/master/luatool)       |    0.08 |
-| [nodemcu-tool](https://github.com/andidittrich/NodeMCU-Tool)     |      0.3 |
-| [nodemcu-uploader](https://github.com/kmpm/nodemcu-uploader) |  	   2.2 |
+| Tool             | seconds | kb/s          |
+| ---------------- | ----:| -------------:|
+| [Luatool.py](https://github.com/4refr0nt/luatool/tree/master/luatool) | 35.9 |    0.08 |
+| [nodemcu-tool](https://github.com/andidittrich/NodeMCU-Tool)          |  9.2 |     0.3 |
+| **[nodemcu-uploader](https://github.com/kmpm/nodemcu-uploader)**          |  **1.3** |     **2.2** |
 
 
 (Tested by uploading a 2.8kb file)
