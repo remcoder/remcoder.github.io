@@ -4,7 +4,7 @@ title: Google launches IoT Developer Kit
 layout: post
 tags: [ioT, Q42, Google]
 ---
-At [Q42](http://www.q42.com) we love IoT. So much so that we've created a connected coffee counter, a remote controller for our Phillips Hue office lights and of course connected toilets. Needless to say we were very excited when Google asked us to help them building their [IoT Developer Kit](https://cloud.google.com/solutions/iot/kit/).
+At [Q42](http://www.q42.com) we love IoT. So much so that we've created a [connected coffee counter](https://medium.com/q42bv/hacking-the-coffee-machine-5802172b17c1#.3995xcjyu), a [remote controller for our Phillips Hue office lights](https://medium.com/q42bv/control-our-office-lights-from-our-website-b4bb7342186d#.vafbs3m9e) and of course [connected toilets](https://medium.com/q42bv/happy-plees-voor-nerds-e03fcbf66e94#.7jo47wfis). Needless to say we were very excited when Google asked us to help them building their [IoT Developer Kit](https://cloud.google.com/solutions/iot/kit/).
 
 ![IoT Developer Prototyping Kit](https://www.seeedstudio.com/upload/image/20160913/1473731372346783.jpg)
 
