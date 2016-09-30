@@ -1,6 +1,6 @@
 ---
 published: true
-title: Google launches IoT Developer Kit
+title: Google Launches IoT Developer Kit
 layout: post
 tags: [ioT, Q42, Google]
 ---
