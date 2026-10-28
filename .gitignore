@@ -39,3 +39,13 @@ validation-report.json
 
 # Folders to ignore
 node_modules
+
+# added by meta .gitignore audit
+.env
+.env.*
+__pycache__/
+*.pyc
+.venv/
+venv/
+!.env.example
+!.env.sample
